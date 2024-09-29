@@ -69,8 +69,6 @@
 }
 
 .overlay {
-    width: 356px;
-    height: 563px;
     position: absolute;
     top: 0;
     left: 0;
@@ -151,6 +149,7 @@
     font-weight: 400;
     text-transform: uppercase;
     background: transparent;
+    font-family: Raleway, sans-serif;
 }
 
 .lots {
