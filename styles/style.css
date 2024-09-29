@@ -1,3 +1,8 @@
+.static-layout {
+    max-width: 1440px;
+    margin: auto;
+}
+
 .header {
     display: grid;
     grid-template-columns: 439px 181px 490px;
@@ -172,16 +177,16 @@
 .lots_card-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
     padding-bottom: 31px;
     list-style: none;
-    column-gap: 10px;
 }
 
 .lots_card-list-item {
-    width: 10px;
+    flex-basis: calc(33.333% - 20px);
+    min-width: 280px;
     min-height: 450px;
-    flex-grow: 1;
+    box-sizing: border-box;
 }
 
 .card-link {
@@ -196,7 +201,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 49px 40px;
+    padding: 40px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -207,7 +212,7 @@
     z-index: 1;
     color: #fff;
     font-size: 22px;
-    line-height: 120%;
+    line-height: 1.2;
     text-decoration: underline;
     text-underline-offset: 4px;
     text-transform: uppercase;
